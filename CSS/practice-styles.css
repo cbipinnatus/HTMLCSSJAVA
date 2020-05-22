@@ -1,0 +1,62 @@
+
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(178,162,249,1) 100%);
+    font-family: Helvetica, Haettenschweiler, 'Arial Narrow Bold';
+    text-align:center;
+    padding: 25px 100px 75px
+    margin: auto;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px teal;
+    color: rgb(2, 2, 2);
+    text-decoration:underline blueviolet;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font: 32px Impact, Helvetica, serif; 
+}
+
+h2 {
+    color:blueviolet;
+    font: 20px Georgia, Times New Romans, Helvetica;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 20%;
+    margin: auto;  
+}
+
+td, th {
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+th {
+    background-color: rgb(187, 146, 252);
+    color:black;
+}
+
+thead {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+form {
+    background-color: rgb(3, 169, 190);
+    padding: 8px;
+    width: 250px;
+    margin: auto;
+}
+#submit-btn {
+    display: block;
+    margin: auto;  
+}

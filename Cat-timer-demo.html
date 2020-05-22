@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Demo 2</title>
+    <style> 
+        img { 
+            position: absolute;
+            left: 0;
+            top: 50px;  
+        }
+    
+    </style>
+</head>
+<body onload="moveCat()">
+    <img src="images/Cat.jpg" alt="A scardy cat image"/> 
+    <button type="button" onclick="clearTimeout(catTimer);"> STOP THE SCARDY PUSSY CAT</button>
+    <script> 
+        let xPosition =0; 
+        let theCat = document.querySelector('img'); 
+        let catTimer =0;
+        function moveCat() { 
+            xPosition += 1;
+            theCat.style.left = xPosition + 'px'; 
+            catTimer = setTimeout(moveCat, 30);
+           
+        }
+    </script>
+    
+</body>
+</html>

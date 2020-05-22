@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div>Move your mouse over to this text then off!</div>
+
+    <script>
+        const div = document.querySelector('div');
+        div.addEventListener('mouseover', changeTextColor);
+        div.addEventListener('mouseover', changeBackground);
+        div.addEventListener('mouseout', revert);
+
+        function changeTextColor() {
+            div.style.color = 'orange';
+        }
+
+        function changeBackground() {
+            div.style.background = 'purple';
+            div.removeEventListener('mouseover', changeBackground);
+        }
+
+        function revert() {
+            div.style.color = 'black';
+            div.style.background = 'white';
+        }
+    </script>
+</body>
+
+</html>
